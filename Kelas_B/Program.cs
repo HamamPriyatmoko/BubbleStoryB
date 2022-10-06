@@ -69,6 +69,21 @@ namespace Bubble_Sort
             }
         }
 
+        static void Main(string[] args)
+        {
+            //Craeting the object of the Bubblesort class
+            Program myList = new Program();
+
+            //Pemanggilan fungsi untuk menerima elemen array 
+            myList.read();
+            //pemanggilan fungsi untuk mengurutkan array
+            myList.BubbleSortArray();
+            //Pemanggilan fungsi untuk menampilkan array yang tersusun
+            myList.display();
+            // Exit
+            Console.WriteLine("\n\nTekan Tombol apa saja untuk keluar.");
+            Console.Read();
+        }
     }
 }
   
